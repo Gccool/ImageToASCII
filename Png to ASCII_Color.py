@@ -8,8 +8,8 @@ import colorsys
 
 startTime = time.time()
 
-Path = r'C:\Users\georg\Pictures\Goat.jpeg'
-Outputfile = open(r"C:\Users\georg\Pictures\ASCII.txt", "w")
+Path = r'Put Image Her'
+Outputfile = open(r"Output Path.txt", "w") #txt one
 img = cv2.imread(Path)
 
 characters = [' ', '.', '_', ':', ';', '#', '@']
@@ -66,7 +66,7 @@ if ShouldDownScale == False:
 #img = Image.new('RGB', (img.shape[0] * 18, int(img.shape[1] * 10.1)), (0, 0, 0))
 #d = ImageDraw.Draw(img)
 #d.text((5, 5), Answer, fill=(255, 255, 255))
-Img.save(r"C:\Users\georg\Pictures\ASCIIImg_Color.png")
+Img.save(r"OutputLocation.png")
 
 a = Outputfile.write(Answer)        
 Outputfile.close()
