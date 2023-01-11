@@ -28,7 +28,7 @@ if ShouldDeScale:
         for x in range(0, int(img.shape[1] / DeScaleAmount)):
             b,g,r = (img[y * DeScaleAmount, x * DeScaleAmount])
             luminance = (r * 0.3) + (g * 0.59) + (b * 0.11)
-            Char = characters[int(luminance / 40)]
+            Char = characters[int((luminance / 255) * len(characters))]
             Answer += Char
             Answer += ' '
             #d.text((x, y), Answer, fill=(r, g, b))
@@ -41,7 +41,7 @@ if ShouldDeScale == False:
         for x in range(0, img.shape[1]):
             b,g,r = (img[y, x])
             luminance = (r * 0.3) + (g * 0.59) + (b * 0.11)
-            Char = characters[int(luminance / 40)]
+            Char = characters[int((luminance / 255) * len(characters))]
             Answer += Char
             Answer += ' '
             #d.text((x, y), Answer, fill=(r, g, b))
