@@ -6,8 +6,8 @@ from PIL import ImageFont
 import time
 
 startTime = time.time()
-Path = r'C:\Users\georg\Pictures\Goat.jpeg'
-Outputfile = open(r"C:\Users\georg\Pictures\ASCII.txt", "w")
+Path = r''
+Outputfile = open(r"", "w")
 img = cv2.imread(Path)
 
 characters = [' ', '.', '_', ':', ';', '#', '@']
@@ -55,7 +55,7 @@ if ShouldDeScale == False:
     Img = Image.new('RGB', (int((img.shape[0] * 18)), int((img.shape[1] * 15.5))), (0, 0, 0))
 d = ImageDraw.Draw(Img)
 d.text((5, 5), Answer, fill=(255, 255, 255))
-Img.save(r"C:\Users\georg\Pictures\ASCIIImg_GrayScale.png")
+Img.save(r"")
 
 a = Outputfile.write(Answer)        
 Outputfile.close()
