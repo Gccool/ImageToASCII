@@ -10,7 +10,7 @@ Path = r''
 Outputfile = open(r"", "w")
 img = cv2.imread(Path)
 
-characters = [' ', '.', '_', ':', ';', '#', '@']
+characters = [' ', '.', '_', ':', ';', '~', '1', '5', '#', '@']
 
 Answer = ''
 
