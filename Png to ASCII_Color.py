@@ -12,7 +12,7 @@ Path = r'Put Image Her'
 Outputfile = open(r"Output Path.txt", "w") #txt one
 img = cv2.imread(Path)
 
-characters = [' ', '.', '_', ':', ';', '#', '@']
+characters = [' ', '.', '_', ':', ';', '~', '1', '5', '#', '@']
 
 
 Answer = ''
